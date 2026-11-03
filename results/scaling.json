@@ -1,0 +1,65 @@
+{
+ "model": "mqa",
+ "repo": "LM_2023_Mutli_Query_Attention_transformer",
+ "target_repo": "LM_Dec_Attention_MQA",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2023_Mutli_Query_Attention_transformer (see LICENSE in vendor folder if present)",
+ "unified": [
+  "1 key/value head"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-11-02 11:33:08",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 252.6,
+    "ms": 19.0,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 130.3,
+    "ms": 7.0,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 731.9,
+    "ms": 22.5,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 410.8,
+    "ms": 8.5,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 2632.5,
+    "ms": 56.5,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 1501.3,
+    "ms": 26.0,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 4096,
+   "note": "not supported (model built for <= 2048)"
+  },
+  {
+   "len": 8192,
+   "note": "not supported (model built for <= 2048)"
+  }
+ ],
+ "seconds": 2.7
+}

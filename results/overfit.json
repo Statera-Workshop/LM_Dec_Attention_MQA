@@ -1,0 +1,24 @@
+{
+ "model": "mqa",
+ "repo": "LM_2023_Mutli_Query_Attention_transformer",
+ "target_repo": "LM_Dec_Attention_MQA",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2023_Mutli_Query_Attention_transformer (see LICENSE in vendor folder if present)",
+ "unified": [
+  "1 key/value head"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-11-02 11:41:09",
+ "smoke": false,
+ "first_ce": 5.620276927947998,
+ "last_ce": 0.0014040113892406225,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 11.0,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check",
+ "bf16": true
+}

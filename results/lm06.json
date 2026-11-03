@@ -1,0 +1,402 @@
+{
+ "model": "mqa",
+ "repo": "LM_2023_Mutli_Query_Attention_transformer",
+ "target_repo": "LM_Dec_Attention_MQA",
+ "category": "Attention",
+ "upstream": "vendored from RichardMinsooGo/LM_2023_Mutli_Query_Attention_transformer (see LICENSE in vendor folder if present)",
+ "unified": [
+  "1 key/value head"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm06",
+ "started": "2026-11-02 22:29:15",
+ "smoke": false,
+ "steps": 6000,
+ "capped": false,
+ "diverged": false,
+ "bf16": true,
+ "final_loss": 1.9497089385986328,
+ "minutes": 21.9,
+ "history": [
+  {
+   "step": 500,
+   "loss": 3.400491952896118,
+   "acc": 0.1640625,
+   "acc_updated": 0.296875,
+   "acc_unchanged": 0.03125,
+   "stale_rate": 0.03125,
+   "by_distance": {
+    "0-256": [
+     0.043,
+     23
+    ],
+    "256-1024": [
+     0.176,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 1000,
+   "loss": 2.8785970211029053,
+   "acc": 0.23828125,
+   "acc_updated": 0.453125,
+   "acc_unchanged": 0.0234375,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.174,
+     23
+    ],
+    "256-1024": [
+     0.245,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 1500,
+   "loss": 2.6387240886688232,
+   "acc": 0.2578125,
+   "acc_updated": 0.484375,
+   "acc_unchanged": 0.03125,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.304,
+     23
+    ],
+    "256-1024": [
+     0.253,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 2000,
+   "loss": 2.5719189643859863,
+   "acc": 0.2421875,
+   "acc_updated": 0.4453125,
+   "acc_unchanged": 0.0390625,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.435,
+     23
+    ],
+    "256-1024": [
+     0.223,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 2500,
+   "loss": 2.415048599243164,
+   "acc": 0.25,
+   "acc_updated": 0.421875,
+   "acc_unchanged": 0.078125,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.261,
+     23
+    ],
+    "256-1024": [
+     0.249,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 3000,
+   "loss": 2.2869205474853516,
+   "acc": 0.28515625,
+   "acc_updated": 0.53125,
+   "acc_unchanged": 0.0390625,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.391,
+     23
+    ],
+    "256-1024": [
+     0.275,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 3500,
+   "loss": 2.167001247406006,
+   "acc": 0.28515625,
+   "acc_updated": 0.5390625,
+   "acc_unchanged": 0.03125,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.304,
+     23
+    ],
+    "256-1024": [
+     0.283,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 4000,
+   "loss": 2.21998929977417,
+   "acc": 0.328125,
+   "acc_updated": 0.59375,
+   "acc_unchanged": 0.0625,
+   "stale_rate": 0.015625,
+   "by_distance": {
+    "0-256": [
+     0.435,
+     23
+    ],
+    "256-1024": [
+     0.318,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 4500,
+   "loss": 2.143223762512207,
+   "acc": 0.33203125,
+   "acc_updated": 0.6171875,
+   "acc_unchanged": 0.046875,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.609,
+     23
+    ],
+    "256-1024": [
+     0.305,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 5000,
+   "loss": 2.16575026512146,
+   "acc": 0.33203125,
+   "acc_updated": 0.6171875,
+   "acc_unchanged": 0.046875,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.565,
+     23
+    ],
+    "256-1024": [
+     0.309,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 5500,
+   "loss": 2.0241832733154297,
+   "acc": 0.3515625,
+   "acc_updated": 0.6640625,
+   "acc_unchanged": 0.0390625,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.522,
+     23
+    ],
+    "256-1024": [
+     0.335,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 6000,
+   "loss": 1.9497089385986328,
+   "acc": 0.37890625,
+   "acc_updated": 0.6796875,
+   "acc_unchanged": 0.078125,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.652,
+     23
+    ],
+    "256-1024": [
+     0.352,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  }
+ ],
+ "test": {
+  "512": {
+   "acc": 0.35791015625,
+   "acc_updated": 0.6650390625,
+   "acc_unchanged": 0.05078125,
+   "stale_rate": 0.01171875,
+   "by_distance": {
+    "0-256": [
+     0.595,
+     195
+    ],
+    "256-1024": [
+     0.333,
+     1853
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  "2048": {
+   "acc": 0.197265625,
+   "acc_updated": 0.3251953125,
+   "acc_unchanged": 0.0693359375,
+   "stale_rate": 0.05859375,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     4
+    ],
+    "256-1024": [
+     0.108,
+     203
+    ],
+    "1024-4096": [
+     0.207,
+     1841
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  }
+ },
+ "config": {
+  "pairs": 8,
+  "updates": 4,
+  "queries": 4,
+  "train_len": 512,
+  "test_lens": [
+   512,
+   2048
+  ],
+  "batch": 32,
+  "steps": 6000,
+  "eval_every": 500,
+  "eval_samples": 512,
+  "max_hours": 1.5
+ },
+ "micro_batch": 8,
+ "seconds": 1316.3
+}
